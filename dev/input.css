@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    /* Brand Colors */
+    --color-primary: #1E1E2E;
+    --color-accent: #FF6B6B;
+    --color-secondary: #FFD166;
+    --color-background: #F8F9FA;
+    --color-text: #ECECEC;
+
+    /* Adobe Products Colors */
+    --color-illustrator: #FF5722;
+    --color-premiere: #E040FB;
+    --color-photoshop: #03A9F4;
+    --color-xd: #FF41C8;
+
+    --radius-fancy: 60% 40% 40% 60% / 60% 60% 40% 40%;
+}
+
+@layer base {
+    * {
+        @apply font-poppins;
+    }
+}
+
+@utility container {
+    @apply max-w-[95%] mx-auto;
+
+    @variant md {
+        @apply max-w-[90%];
+    }
+
+    @variant xl {
+        @apply max-w-[1200px];
+    }
+}
+
+@utility section {
+    @apply py-20;
+}
+
+@utility sec-heading {
+    @apply mb-4;
+}
+
+@utility sec-subtitle {
+    @apply text-accent font-semibold text-sm;
+}
+
+@utility sec-title {
+    @apply text-primary font-semibold text-2xl;
+}
+
+@utility btn {
+    @apply w-fit px-8 py-3.5 font-semibold bg-secondary rounded-full text-background hover:bg-accent block mt-5;
+}
+
+@utility feature {
+    @apply absolute py-3 px-8 rounded-md text-background text-center text-sm leading-[.8];
+}
+
+@utility step {
+    @apply absolute w-[200px];
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+
+@utility col-img {
+    @apply w-[460px]
+}
+
+
+/* ============== Custom CSS ============== */
+/* Menu */
+.menu-list a {
+    @apply hover:text-accent;
+}
+
+.submenu li:not(:last-child) {
+    @apply mb-4;
+}
+
+.submenu li a {
+    @apply whitespace-nowrap hover:-ml-0.5;
+}
+
+/* About section */
+.feature .number {
+    @apply block text-xl font-bold;
+}
+
+/* Roadmap section */
+.step img {
+    @apply w-20 h-20 object-contain mx-auto;
+}
+
+.step div {
+    @apply w-[200px] text-center;
+}
+
+.step h3 {
+    @apply font-semibold text-lg rounded-full text-background my-3.5;
+}
+
+.step p {
+    @apply text-sm;
+}
+
+.adobe-product {
+    @apply relative bg-text/30 rounded-lg p-6 text-center overflow-hidden;
+}
+
+.adobe-product .number {
+    @apply absolute -left-[18px] top-6 text-7xl text-background;
+}
+
+.adobe-product img {
+    @apply w-20 h-20 mx-auto;
+}
+
+.adobe-product h3 {
+    @apply font-bold my-2 uppercase;
+}
+
+.adobe-product .bar {
+    @apply absolute top-6 right-0 w-8 h-2 rounded-l-full;
+}
+
+.adobe-product .btn {
+    @apply mx-auto text-sm hover:bg-primary;
+}
+
+.plan {
+    @apply bg-text/30 rounded-lg p-7 flex flex-col justify-between gap-7 relative;
+}
+
+.plan .title {
+    @apply font-semibold text-lg text-primary/80;
+}
+
+.plan .price {
+    @apply flex items-start justify-start gap-1 mt-4;
+}
+
+.plan .currency {
+    @apply text-3xl font-medium text-primary/40 mt-1;
+}
+
+.plan .price-left {
+    @apply text-7xl font-bold text-primary;
+}
+
+.plan .right-sec {
+    @apply flex flex-col mt-1;
+}
+
+.plan .price-right {
+    @apply text-2xl font-semibold text-primary;
+}
+
+.plan .period {
+    @apply text-base text-primary/40 mt-1;
+}
+
+.plan .plan-features li:not(:last-child) {
+    @apply mb-2.5;
+}
+
+.plan .btn {
+    @apply w-full text-center bg-primary hover:bg-accent;
+}
+
+form .two-inputs {
+    @apply flex gap-7;
+}
+
+form .two-inputs .input-wrapper {
+    @apply flex-1;
+}
+
+form input,
+form select {
+    @apply h-12 px-3 rounded-md border border-text outline-none focus:border-primary w-full;
+}
+
+form label {
+    @apply block text-sm mb-1;
+}
+
+form label span {
+    @apply text-accent;
+}
+
+footer .col li {
+    @apply not-last:mb-3;
+}
+
+footer .col-title {
+    @apply font-bold text-xl text-primary mb-6 mt-3;
+}
+
+.contact-info li {
+    @apply flex items-center gap-2;
+}
+
+footer li a {
+    @apply hover:text-accent;
+}
