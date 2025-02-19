@@ -1,11 +1,9 @@
-const programsParent = document.querySelector("#programs-parent");
-const programsParentArrow = document.querySelector("#programs-parent svg");
-const programsMenu = document.querySelector("#programs");
+window.addEventListener("scroll", () => {
+    const navBar = document.querySelector("#nav-bar");
 
-console.log("Hhh");
-
-programsParent.addEventListener("click", () => {
-    programsParentArrow.classList.toggle("rotate-180");
-    programsMenu.classList.toggle("hidden");
-    // programsMenu.classList.toggle("top-move");
+    if (window.scrollY > 50) {
+        navBar.classList.add("shadow-main");
+    } else {
+        navBar.classList.remove("shadow-main");
+    }
 });

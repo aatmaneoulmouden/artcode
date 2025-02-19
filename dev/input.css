@@ -19,6 +19,8 @@
     --color-xd: #FF41C8;
 
     --radius-fancy: 60% 40% 40% 60% / 60% 60% 40% 40%;
+
+    --shadow-main: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 @layer base {
