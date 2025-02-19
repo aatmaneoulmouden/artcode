@@ -517,6 +517,9 @@
   .section {
     padding-block: calc(var(--spacing) * 20);
   }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
@@ -616,6 +619,9 @@
   }
 }
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     font-family: var(--font-poppins);
   }

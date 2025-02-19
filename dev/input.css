@@ -24,6 +24,10 @@
 }
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
     * {
         @apply font-poppins;
     }
