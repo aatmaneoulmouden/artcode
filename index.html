@@ -21,7 +21,7 @@
             class="logo no-underline text-primary font-poppins text-2xl font-bold tracking-[1px]"
             >ARTCODE</a
           >
-          <div class="flex items-center gap-10">
+          <!-- <div class="flex items-center gap-10">
             <ul class="menu-list flex gap-7">
               <li>
                 <a href="#mission" class="nav-link active">Mission</a>
@@ -71,22 +71,27 @@
               class="w-fit px-8 py-3.5 font-semibold bg-accent rounded-full text-background hover:bg-primary"
               >Apply Now</a
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>
 
     <header class="" id="mission">
       <div class="container">
-        <div class="h-[calc(100vh-5rem)] pt-20 grid grid-cols-2">
-          <div class="col relative flex flex-col justify-center gap-10">
+        <div class="pt-20 grid grid-cols-1 md:grid-cols-2 md:h-[calc(100vh-5rem)]">
+          <div class="col flex justify-center items-center md:hidden">
+          </div>
+          <div class="col relative flex flex-col justify-center gap-4 md:gap-10">
             <img
               src="./assets/images/hero_shape_1.svg"
               alt="ARTCODE"
               loading="lazy"
-              class="absolute left-0 top-10"
+              class="absolute left-0 top-10 hidden lg:block -z-10"
             />
-            <h1 class="font-poppins text-5xl font-bold leading-16">
+            <h1
+              class="font-poppins text-3xl font-bold leading-14 text-center md:text-5xl md:text-left md:leading-16"
+              aria-label="With ARTCODE You Can Code, Design, and Picture"
+            >
               With
               <span class="relative font-bold font-poppins text-primary"
                 >ARTCODE
@@ -96,18 +101,20 @@
                   loading="lazy"
                   class="absolute left-0 right-0 -bottom-1"
               /></span>
-              You Can <br />
+              You Can <br class="hidden lg:block" />
               Code, Design, and Picture.
             </h1>
             <img
               src="./assets/images/hero_shape_2.svg"
               alt="ARTCODE"
               loading="lazy"
-              class="absolute right-0 bottom-10"
+              class="absolute right-0 bottom-10 hidden md:block"
             />
-            <a href="mailto:support@artcode.com" class="btn">Get in Touch</a>
+            <a href="mailto:support@artcode.com" class="btn mx-auto mt-0 md:ml-0"
+              >Get in Touch</a
+            >
           </div>
-          <div class="col flex justify-center items-center">
+          <div class="col hidden justify-center items-center md:flex">
             <img
               src="./assets/images/image-hero.png"
               alt="ARTCODE School"
@@ -118,7 +125,7 @@
       </div>
     </header>
 
-    <section class="section about pt-28" id="about">
+    <!-- <section class="section about pt-28" id="about">
       <div class="container">
         <div class="grid grid-cols-2">
           <div class="col">
@@ -607,7 +614,7 @@
           <a href="" class="hover:text-accent">Privacy Policy</a>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
