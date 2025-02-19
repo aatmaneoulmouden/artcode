@@ -1,3 +1,5 @@
+const navLinks = document.querySelectorAll(".nav-link");
+
 window.addEventListener("scroll", () => {
     const navBar = document.querySelector("#nav-bar");
 
@@ -6,4 +8,14 @@ window.addEventListener("scroll", () => {
     } else {
         navBar.classList.remove("shadow-main");
     }
+});
+
+navLinks.forEach(navLink => {
+    navLink.addEventListener("click", () => {
+        navLinks.forEach(navLinktoDisable => {
+            navLinktoDisable.classList.remove("active");
+        });
+
+        navLink.classList.add("active");
+    });
 });
