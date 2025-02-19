@@ -32,7 +32,35 @@
               <li
                 class="relative flex items-center gap-1.5 group cursor-pointer"
               >
-                <a href="" class="nav-link">Programs</a>
+                <a href="#" class="nav-link group-hover:text-accent">Programs</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 group-hover:text-accent"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+
+                <ul
+                  class="submenu w-[220px] absolute bg-background top-full p-5 rounded-lg hidden group-hover:block"
+                >
+                  <li>
+                    <a href="#dev">Fullstack Development</a>
+                  </li>
+                  <li>
+                    <a href="#design">Graphic Design</a>
+                  </li>
+                  <li>
+                    <a href="#photography">Photography</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="#pricing" class="nav-link">Pricing</a>
@@ -467,13 +495,13 @@
                 </select>
               </div>
             </div>
-            <button class="btn cursor-pointer ml-auto bg-accent hover:bg-primary">Submit</button>
+            <button
+              class="btn cursor-pointer ml-auto bg-accent hover:bg-primary"
+            >
+              Submit
+            </button>
           </form>
-          <img
-            src="./assets/images/apply.png"
-            alt="Apply Now"
-            loading="lazy"
-          />
+          <img src="./assets/images/apply.png" alt="Apply Now" loading="lazy" />
         </div>
       </div>
     </section>
