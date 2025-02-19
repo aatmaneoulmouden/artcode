@@ -46,7 +46,7 @@
 }
 
 @utility section {
-    @apply py-20;
+    @apply py-24;
 }
 
 @utility sec-heading {
@@ -84,6 +84,10 @@
 
 /* ============== Custom CSS ============== */
 /* Menu */
+.nav-link.active {
+    @apply text-accent;
+}
+
 .menu-list a {
     @apply hover:text-accent;
 }
@@ -118,6 +122,7 @@
     @apply text-sm;
 }
 
+/* Adobe Products Section */
 .adobe-product {
     @apply relative bg-text/30 rounded-lg p-6 text-center overflow-hidden;
 }
@@ -142,6 +147,7 @@
     @apply mx-auto text-sm hover:bg-primary;
 }
 
+/* Pricing Section */
 .plan {
     @apply bg-text/30 rounded-lg p-7 flex flex-col justify-between gap-7 relative;
 }
@@ -182,6 +188,7 @@
     @apply w-full text-center bg-primary hover:bg-accent;
 }
 
+/* Application Form Section */
 form .two-inputs {
     @apply flex gap-7;
 }
@@ -203,6 +210,7 @@ form label span {
     @apply text-accent;
 }
 
+/* Footer */
 footer .col li {
     @apply not-last:mb-3;
 }
