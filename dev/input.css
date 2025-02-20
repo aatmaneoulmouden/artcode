@@ -31,6 +31,10 @@
     * {
         @apply font-poppins;
     }
+
+    p {
+        @apply text-sm lg:text-base;
+    }
 }
 
 @utility container {
@@ -46,7 +50,7 @@
 }
 
 @utility section {
-    @apply py-24;
+    @apply pb-0 pt-24 lg:pt-24;
 }
 
 @utility sec-heading {
@@ -78,7 +82,7 @@
 }
 
 @utility col-img {
-    @apply w-[460px]
+    @apply w-[320px] md:w-[460px]
 }
 
 
