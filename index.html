@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -89,7 +89,7 @@
               class="absolute left-0 top-10 hidden lg:block -z-10"
             />
             <h1
-              class="font-poppins text-3xl font-bold leading-14 text-center md:text-5xl md:text-left md:leading-16"
+              class="font-poppins text-3xl font-bold leading-14 md:text-5xl md:leading-16"
               aria-label="With ARTCODE You Can Code, Design, and Picture"
             >
               With
@@ -110,7 +110,7 @@
               loading="lazy"
               class="absolute right-0 bottom-10 hidden md:block"
             />
-            <a href="mailto:support@artcode.com" class="btn mx-auto mt-0 md:ml-0"
+            <a href="mailto:support@artcode.com" class="btn hidden md:block"
               >Get in Touch</a
             >
           </div>
@@ -125,20 +125,20 @@
       </div>
     </header>
 
-    <!-- <section class="section about pt-28" id="about">
+    <section class="section about pt-12 md:pt-28" id="about">
       <div class="container">
-        <div class="grid grid-cols-2">
-          <div class="col">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="col md:flex-center">
             <div
-              class="img-wrapper rounded-fancy max-w-[400px] h-full relative"
+              class="img-wrapper rounded-fancy max-w-[300px] h-[300px] relative mx-auto lg:max-w-[400px] lg:h-full"
             >
-              <span class="feature left-[50%] -top-6 bg-primary">
+              <span class="feature left-[50%] -top-6 bg-primary" aria-label="1000 students">
                 <span class="number">1000</span> Students</span
               >
-              <span class="feature right-0.5 top-[75%] bg-accent">
+              <span class="feature right-0.5 top-[75%] bg-accent" aria-label="20 majors">
                 <span class="number">20</span> Majors</span
               >
-              <span class="feature top-[50%] -left-10 bg-secondary">
+              <span class="feature top-[40%] -left-[8%] lg:top-[50%] lg:-left-10 bg-secondary" aria-label="500 teachers">
                 <span class="number">500</span> Teachers</span
               >
               <img
@@ -150,29 +150,29 @@
             </div>
           </div>
           <div class="col">
-            <div class="sec-heading">
+            <div class="sec-heading text-center mt-5 md:mt-0 md:text-left">
               <span class="sec-subtitle">artcode</span>
               <h2 class="sec-title">About Us.</h2>
             </div>
-            <p class="mb-3">
+            <p class="mb-3 text-justify text-sm lg:text-base md:text-left">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
               repellendus ratione magnam dignissimos assumenda sed vel facilis
               quaerat? Unde quod commodi deserunt dolore, incidunt totam
               quibusdam hic reiciendis voluptas! Magni.
             </p>
-            <p>
+            <p class="text-justify text-sm lg:text-base md:text-left">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
               repellendus ratione magnam dignissimos assumenda sed vel facilis
               quaerat? Unde quod commodi deserunt dolore, incidunt totam
               quibusdam hic reiciendis voluptas! Magni.
             </p>
-            <a href="mailto:support@artcode.com" class="btn">Get in Touch</a>
+            <a href="mailto:support@artcode.com" class="btn w-full text-center md:w-fit">Get in Touch</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section program development" id="dev">
+    <!-- <section class="section program development" id="dev">
       <div class="container">
         <div class="grid grid-cols-2 items-center">
           <div class="col">
