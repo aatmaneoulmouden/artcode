@@ -96,12 +96,24 @@
     @apply hover:text-accent;
 }
 
+.mobile-menu-list > li {
+    @apply w-full text-center py-4 not-last:border-b border-text/40; 
+}
+
+.mobile-menu-list li a {
+    @apply text-xl;
+}
+
 .submenu li:not(:last-child) {
     @apply mb-4;
 }
 
 .submenu li a {
     @apply whitespace-nowrap hover:-ml-0.5;
+}
+
+.mobile-submenu.active {
+    @apply h-full flex;
 }
 
 /* About section */

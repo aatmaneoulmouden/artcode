@@ -21,7 +21,7 @@
             class="logo no-underline text-primary font-poppins text-2xl font-bold tracking-[1px]"
             >ARTCODE</a
           >
-          <!-- <div class="flex items-center gap-10">
+          <div class="hidden items-center gap-10 md:flex">
             <ul class="menu-list flex gap-7">
               <li>
                 <a href="#mission" class="nav-link active">Mission</a>
@@ -32,7 +32,9 @@
               <li
                 class="relative flex items-center gap-1.5 group cursor-pointer"
               >
-                <a href="#" class="nav-link group-hover:text-accent">Programs</a>
+                <a href="#" class="nav-link group-hover:text-accent"
+                  >Programs</a
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -71,17 +73,109 @@
               class="w-fit px-8 py-3.5 font-semibold bg-accent rounded-full text-background hover:bg-primary"
               >Apply Now</a
             >
-          </div> -->
+          </div>
+
+          <button class="open-menu md:hidden" id="open-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="mobile-menu fixed left-0 top-0 w-full h-screen bg-background hidden md:hidden"
+            id="mobile-menu"
+          >
+            <div class="container">
+              <div
+                class="mobile-menu-head h-20 flex justify-between items-center"
+              >
+                <a
+                  href="#"
+                  class="logo no-underline text-primary font-poppins text-2xl font-bold tracking-[1px]"
+                  >ARTCODE</a
+                >
+                <button class="close-menu" id="close-menu">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-menu-body relative h-[calc(100vh-5rem)]">
+                <ul class="mobile-menu-list flex flex-col items-center">
+                  <li>
+                    <a href="#mission" class="nav-link mobile-link active">Mission</a>
+                  </li>
+                  <li>
+                    <a href="#about" class="nav-link mobile-link">About</a>
+                  </li>
+                  <li
+                    class="relative flex flex-col gap-1 items-center" id="toggle-mobile-submenu"
+                  >
+                    <a href="#" class="nav-link group-hover:text-accent"
+                      >Programs</a
+                    >
+
+                    <ul
+                      class="mobile-submenu text-center overflow-hidden h-0 hidden flex-col gap-4 mt-4" id="mobile-submenu"
+                    >
+                      <li>
+                        <a href="#dev" class="mobile-link">Fullstack Development</a>
+                      </li>
+                      <li>
+                        <a href="#design" class="mobile-link">Graphic Design</a>
+                      </li>
+                      <li>
+                        <a href="#photography" class="mobile-link">Photography</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#pricing" class="nav-link mobile-link">Pricing</a>
+                  </li>
+                </ul>
+                <a
+                  href="#apply"
+                  class="absolute bottom-5 left-0 w-full text-center px-8 py-3.5 font-semibold bg-accent rounded-full text-background hover:bg-primary"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
 
     <header class="" id="mission">
       <div class="container">
-        <div class="pt-20 grid grid-cols-1 md:grid-cols-2 md:h-[calc(100vh-5rem)]">
-          <div class="col flex justify-center items-center md:hidden">
-          </div>
-          <div class="col relative flex flex-col justify-center gap-4 md:gap-10">
+        <div
+          class="pt-20 grid grid-cols-1 md:grid-cols-2 md:h-[calc(100vh-5rem)]"
+        >
+          <div class="col flex justify-center items-center md:hidden"></div>
+          <div
+            class="col relative flex flex-col justify-center gap-4 md:gap-10"
+          >
             <img
               src="./assets/images/hero_shape_1.svg"
               alt="ARTCODE"
@@ -132,13 +226,22 @@
             <div
               class="img-wrapper rounded-fancy max-w-[300px] h-[300px] relative mx-auto lg:max-w-[400px] lg:h-full"
             >
-              <span class="feature left-[50%] -top-6 bg-primary" aria-label="1000 students">
+              <span
+                class="feature left-[50%] -top-6 bg-primary"
+                aria-label="1000 students"
+              >
                 <span class="number">1000</span> Students</span
               >
-              <span class="feature right-0.5 top-[75%] bg-accent" aria-label="20 majors">
+              <span
+                class="feature right-0.5 top-[75%] bg-accent"
+                aria-label="20 majors"
+              >
                 <span class="number">20</span> Majors</span
               >
-              <span class="feature top-[40%] -left-[8%] lg:top-[50%] lg:-left-10 bg-secondary" aria-label="500 teachers">
+              <span
+                class="feature top-[40%] -left-[8%] lg:top-[50%] lg:-left-10 bg-secondary"
+                aria-label="500 teachers"
+              >
                 <span class="number">500</span> Teachers</span
               >
               <img
@@ -166,7 +269,11 @@
               quaerat? Unde quod commodi deserunt dolore, incidunt totam
               quibusdam hic reiciendis voluptas! Magni.
             </p>
-            <a href="mailto:support@artcode.com" class="btn w-full text-center md:w-fit">Get in Touch</a>
+            <a
+              href="mailto:support@artcode.com"
+              class="btn w-full text-center md:w-fit"
+              >Get in Touch</a
+            >
           </div>
         </div>
       </div>
@@ -175,10 +282,10 @@
     <section class="section program development" id="dev">
       <div class="container">
         <div class="grid grid-cols-1 items-center md:grid-cols-2">
-            <div class="block text-center -mb-5 md:hidden">
-              <span class="sec-subtitle">artcode</span>
-              <h2 class="sec-title">Become a Fullstack Developer.</h2>
-            </div>
+          <div class="block text-center -mb-5 md:hidden">
+            <span class="sec-subtitle">artcode</span>
+            <h2 class="sec-title">Become a Fullstack Developer.</h2>
+          </div>
           <div class="col order-2 md:order-1">
             <div class="sec-heading hidden md:block">
               <span class="sec-subtitle">artcode</span>
@@ -190,7 +297,9 @@
               ipsa, dolorem dolores culpa iusto repudiandae eligendi quaerat.
               Adipisci nihil dolores inventore.
             </p>
-            <a href="#mernstack" class="btn bg-accent mx-auto md:ml-0">Learn More</a>
+            <a href="#mernstack" class="btn bg-accent mx-auto md:ml-0"
+              >Learn More</a
+            >
           </div>
           <div class="col flex-center order-1 md:order-2">
             <img

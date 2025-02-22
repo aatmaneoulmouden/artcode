@@ -270,6 +270,9 @@
   .-bottom-1 {
     bottom: calc(var(--spacing) * -1);
   }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
@@ -351,6 +354,9 @@
   .-mt-20 {
     margin-top: calc(var(--spacing) * -20);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -399,6 +405,17 @@
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+  .size-7 {
+    width: calc(var(--spacing) * 7);
+    height: calc(var(--spacing) * 7);
+  }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -408,8 +425,14 @@
   .h-\[300px\] {
     height: 300px;
   }
+  .h-\[calc\(100vh-5rem\)\] {
+    height: calc(100vh - 5rem);
+  }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .col-img {
     width: 320px;
@@ -474,6 +497,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
@@ -485,6 +511,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -816,6 +845,20 @@
     }
   }
 }
+.mobile-menu-list > li {
+  width: 100%;
+  border-color: color-mix(in oklab, var(--color-text) 40%, transparent);
+  padding-block: calc(var(--spacing) * 4);
+  text-align: center;
+  &:not(*:last-child) {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+}
+.mobile-menu-list li a {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+}
 .submenu li:not(:last-child) {
   margin-bottom: calc(var(--spacing) * 4);
 }
@@ -826,6 +869,10 @@
       margin-left: calc(var(--spacing) * -0.5);
     }
   }
+}
+.mobile-submenu.active {
+  display: flex;
+  height: 100%;
 }
 .feature .number {
   display: block;
