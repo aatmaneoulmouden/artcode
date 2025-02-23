@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
   <body class="bg-background">
@@ -468,7 +472,9 @@
               ipsa, dolorem dolores culpa iusto repudiandae eligendi quaerat.
               Adipisci nihil dolores inventore.
             </p>
-            <a href="#adobeproducts" class="btn bg-accent mx-auto md:ml-0">Learn More</a>
+            <a href="#adobeproducts" class="btn bg-accent mx-auto md:ml-0"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
@@ -558,13 +564,13 @@
       </div>
     </section>
 
-    <!-- <section class="section pricing" id="pricing">
+    <section class="section pricing" id="pricing">
       <div class="container">
         <div class="sec-heading text-center">
           <span class="sec-subtitle">artcode</span>
           <h2 class="sec-title">Find a Plan That Fits Your Goals.</h2>
         </div>
-        <div class="grid grid-cols-3 gap-10 mt-20">
+        <div class="hidden grid-cols-3 gap-10 mt-20 lg:grid">
           <article class="plan">
             <div class="plan-heading">
               <h3 class="title">Individuals Plan</h3>
@@ -633,9 +639,80 @@
           </article>
         </div>
       </div>
+      <div class="swiper pricingSwiper lg:hidden">
+        <div class="swiper-wrapper">
+          <article class="plan swiper-slide">
+            <div class="plan-heading">
+              <h3 class="title">Individuals Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="price-left">19</span>
+                <span class="right-sec">
+                  <span class="price-right">.99</span>
+                  <span class="period">/mo</span>
+                </span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li class="">Access all courses</li>
+              <li class="">Community support</li>
+              <li class="">Monthly Q&A sessions</li>
+              <li class="">Certificates of completion</li>
+            </ul>
+            <a href="#apply" class="btn">Start Now</a>
+          </article>
+          <article class="plan swiper-slide">
+            <span
+              class="bg-accent text-background rounded-full py-1.5 px-2.5 font-semibold absolute top-7 right-7"
+              >Best Value!</span
+            >
+            <div class="plan-heading">
+              <h3 class="title">Students Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="price-left">9</span>
+                <span class="right-sec">
+                  <span class="price-right">.99</span>
+                  <span class="period">/mo</span>
+                </span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li class="">Everything in <strong>Individuals</strong> plan</li>
+              <li class="">50% student discount</li>
+              <li class="">Verified certificates</li>
+              <li class="">Priority support</li>
+              <li class="">Exclusive workshops</li>
+            </ul>
+            <a href="#apply" class="btn">Start Now</a>
+          </article>
+          <article class="plan swiper-slide">
+            <div class="plan-heading">
+              <h3 class="title">Business Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="price-left">49</span>
+                <span class="right-sec">
+                  <span class="price-right">.99</span>
+                  <span class="period">/mo per user</span>
+                </span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li class="">Everything in <strong>Students</strong> plan</li>
+              <li class="">Multi-user access</li>
+              <li class="">Team progress tracking</li>
+              <li class="">Dedicated account manager</li>
+              <li class="">Private coaching sessions</li>
+            </ul>
+            <a href="#apply" class="btn">Start Now</a>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
-    <section class="section apply" id="apply">
+    <!-- <section class="section apply" id="apply">
       <div class="container">
         <div class="grid grid-cols-2 gap-10 items-center">
           <form action="">
@@ -793,6 +870,8 @@
         </div>
       </div>
     </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

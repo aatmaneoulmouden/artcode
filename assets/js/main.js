@@ -46,6 +46,17 @@ mobileLinks.forEach(link => {
     link.addEventListener("click", hideMobileMenu)
 })
 
-toggleMobileSubmenu.addEventListener("click", ()=> {
+toggleMobileSubmenu.addEventListener("click", () => {
     mobileSubmenu.classList.toggle("active");
+});
+
+var pricingSwiper = new Swiper(".pricingSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 });

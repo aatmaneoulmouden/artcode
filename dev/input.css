@@ -208,6 +208,14 @@
     @apply w-full text-center bg-primary hover:bg-accent;
 }
 
+.plan.swiper-slide {
+    @apply w-[380px];
+}
+
+.swiper-pagination-bullet-active {
+    @apply bg-accent;
+}
+
 /* Application Form Section */
 form .two-inputs {
     @apply flex gap-7;
