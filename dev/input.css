@@ -144,7 +144,7 @@
 
 /* Adobe Products Section */
 .adobe-product {
-    @apply relative bg-text/30 rounded-lg p-6 text-center overflow-hidden;
+    @apply relative w-[260px] bg-text/30 rounded-lg p-6 text-center overflow-hidden;
 }
 
 .adobe-product .number {
