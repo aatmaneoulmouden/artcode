@@ -276,6 +276,9 @@
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
+  .bottom-28 {
+    bottom: calc(var(--spacing) * 28);
+  }
   .-left-\[8\%\] {
     left: calc(8% * -1);
   }
