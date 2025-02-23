@@ -122,6 +122,10 @@
 }
 
 /* Roadmap section */
+.mern-mobile .step {
+    @apply relative w-fit p-6 rounded-lg border border-text/30;
+}
+
 .step img {
     @apply w-20 h-20 object-contain mx-auto;
 }

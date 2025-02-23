@@ -125,29 +125,37 @@
               <div class="mobile-menu-body relative h-[calc(100vh-5rem)]">
                 <ul class="mobile-menu-list flex flex-col items-center">
                   <li>
-                    <a href="#mission" class="nav-link mobile-link active">Mission</a>
+                    <a href="#mission" class="nav-link mobile-link active"
+                      >Mission</a
+                    >
                   </li>
                   <li>
                     <a href="#about" class="nav-link mobile-link">About</a>
                   </li>
                   <li
-                    class="relative flex flex-col gap-1 items-center" id="toggle-mobile-submenu"
+                    class="relative flex flex-col gap-1 items-center"
+                    id="toggle-mobile-submenu"
                   >
                     <a href="#" class="nav-link group-hover:text-accent"
                       >Programs</a
                     >
 
                     <ul
-                      class="mobile-submenu text-center overflow-hidden h-0 hidden flex-col gap-4 mt-4" id="mobile-submenu"
+                      class="mobile-submenu text-center overflow-hidden h-0 hidden flex-col gap-4 mt-4"
+                      id="mobile-submenu"
                     >
                       <li>
-                        <a href="#dev" class="mobile-link">Fullstack Development</a>
+                        <a href="#dev" class="mobile-link"
+                          >Fullstack Development</a
+                        >
                       </li>
                       <li>
                         <a href="#design" class="mobile-link">Graphic Design</a>
                       </li>
                       <li>
-                        <a href="#photography" class="mobile-link">Photography</a>
+                        <a href="#photography" class="mobile-link"
+                          >Photography</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -157,7 +165,7 @@
                 </ul>
                 <a
                   href="#apply"
-                  class="absolute bottom-5 left-0 w-full text-center px-8 py-3.5 font-semibold bg-accent rounded-full text-background hover:bg-primary"
+                  class="absolute bottom-10 left-0 w-full text-center px-8 py-3.5 font-semibold bg-accent rounded-full text-background hover:bg-primary"
                   >Apply Now</a
                 >
               </div>
@@ -313,14 +321,14 @@
       </div>
     </section>
 
-    <!-- <section class="section developer-tools" id="mernstack">
+    <section class="section developer-tools" id="mernstack">
       <div class="">
         <div class="sec-heading text-center">
           <span class="sec-subtitle">artcode</span>
           <h2 class="sec-title">Master MERN Stack</h2>
         </div>
       </div>
-      <div class="relative">
+      <div class="relative hidden lg:block">
         <img
           src="./assets/images/roadmap-line.svg"
           alt="Roadmap Line"
@@ -379,9 +387,62 @@
           </div>
         </div>
       </div>
+      <div class="mern-mobile flex flex-wrap justify-center gap-10 lg:hidden">
+        <div class="step">
+          <img src="./assets/images/mongodb.svg" alt="MongoDB" loading="lazy" />
+          <div>
+            <h3 class="bg-accent">MongoDB</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, in?
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <img
+            src="./assets/images/express.svg"
+            alt="Express Js"
+            loading="lazy"
+            class="w-10 h-40 object-contain"
+          />
+          <div>
+            <h3 class="bg-secondary">Express Js</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, in?
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <img
+            src="./assets/images/react.svg"
+            alt="React"
+            loading="lazy"
+            class="w-10 h-40 object-contain"
+          />
+          <div>
+            <h3 class="bg-accent">React</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, in?
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <img
+            src="./assets/images/node.svg"
+            alt="Node Js"
+            loading="lazy"
+            class="w-10 h-40 object-contain"
+          />
+          <div>
+            <h3 class="bg-secondary">Node Js</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, in?
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section program design" id="design">
+    <!-- <section class="section program design" id="design">
       <div class="container">
         <div class="grid grid-cols-2 items-center">
           <div class="col flex justify-start items-center">
