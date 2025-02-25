@@ -14,9 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
-  <body class="bg-background">
+  <body class="bg-background overflow-x-hidden">
     <nav class="fixed top-0 left-0 right-0 bg-background z-10" id="nav-bar">
       <div class="container">
         <div class="h-20 flex justify-between items-center">
@@ -237,22 +238,29 @@
           <div class="col md:flex-center">
             <div
               class="img-wrapper rounded-fancy max-w-[300px] h-[300px] relative mx-auto lg:max-w-[400px] lg:h-full"
+              data-aos="fade-right"
             >
               <span
                 class="feature left-[50%] -top-6 bg-primary"
                 aria-label="1000 students"
+                data-aos="zoom-in"
+                data-aos-duration="800"
               >
                 <span class="number">1000</span> Students</span
               >
               <span
                 class="feature right-0.5 top-[75%] bg-accent"
                 aria-label="20 majors"
+                data-aos="zoom-in"
+                data-aos-duration="800"
               >
                 <span class="number">20</span> Majors</span
               >
               <span
                 class="feature top-[40%] -left-[8%] lg:top-[50%] lg:-left-10 bg-secondary"
                 aria-label="500 teachers"
+                data-aos="zoom-in"
+                data-aos-duration="800"
               >
                 <span class="number">500</span> Teachers</span
               >
@@ -264,7 +272,7 @@
               />
             </div>
           </div>
-          <div class="col">
+          <div class="col" data-aos="fade-left">
             <div class="sec-heading text-center mt-5 md:mt-0 md:text-left">
               <span class="sec-subtitle">artcode</span>
               <h2 class="sec-title">About Us.</h2>
@@ -298,7 +306,7 @@
             <span class="sec-subtitle">artcode</span>
             <h2 class="sec-title">Become a Fullstack Developer.</h2>
           </div>
-          <div class="col order-2 md:order-1">
+          <div class="col order-2 md:order-1" data-aos="fade-right">
             <div class="sec-heading hidden md:block">
               <span class="sec-subtitle">artcode</span>
               <h2 class="sec-title">Become a Fullstack Developer.</h2>
@@ -313,7 +321,7 @@
               >Learn More</a
             >
           </div>
-          <div class="col flex-center order-1 md:order-2">
+          <div class="col flex-center order-1 md:order-2" data-aos="fade-left">
             <img
               src="./assets/images/dev.png"
               alt="MERN Developer Program"
@@ -332,14 +340,18 @@
           <h2 class="sec-title">Master MERN Stack</h2>
         </div>
       </div>
-      <div class="relative hidden lg:block">
+      <div class="relative hidden lg:block" data-aos="zoom-out-up">
         <img
           src="./assets/images/roadmap-line.svg"
           alt="Roadmap Line"
           loading="lazy"
         />
 
-        <div class="step left-[4%] top-[26%]">
+        <div
+          class="step left-[4%] top-[26%]"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <img src="./assets/images/mongodb.svg" alt="MongoDB" loading="lazy" />
           <div>
             <h3 class="bg-accent">MongoDB</h3>
@@ -348,7 +360,11 @@
             </p>
           </div>
         </div>
-        <div class="step left-[31%] top-[14%]">
+        <div
+          class="step left-[31%] top-[14%]"
+          data-aos="fade-down"
+          data-aos-duration="800"
+        >
           <img
             src="./assets/images/express.svg"
             alt="Express Js"
@@ -362,7 +378,11 @@
             </p>
           </div>
         </div>
-        <div class="step top-[40%] right-[31%]">
+        <div
+          class="step top-[40%] right-[31%]"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <img
             src="./assets/images/react.svg"
             alt="React"
@@ -376,7 +396,11 @@
             </p>
           </div>
         </div>
-        <div class="step top-[15%] right-[5%]">
+        <div
+          class="step top-[15%] right-[5%]"
+          data-aos="fade-down"
+          data-aos-duration="800"
+        >
           <img
             src="./assets/images/node.svg"
             alt="Node Js"
@@ -453,7 +477,10 @@
             <span class="sec-subtitle">artcode</span>
             <h2 class="sec-title">Become a Fullstack Developer.</h2>
           </div>
-          <div class="col flex justify-center items-center md:justify-start">
+          <div
+            class="col flex justify-center items-center md:justify-start"
+            data-aos="fade-right"
+          >
             <img
               src="./assets/images/designer.png"
               alt="MERN Developer Program"
@@ -461,7 +488,7 @@
               class="col-img"
             />
           </div>
-          <div class="col">
+          <div class="col" data-aos="fade-left">
             <div class="sec-heading hidden md:block">
               <span class="sec-subtitle">artcode</span>
               <h2 class="sec-title">Become a Graphic Designer.</h2>
@@ -487,7 +514,12 @@
           <h2 class="sec-title">Master Adobe Products.</h2>
         </div>
         <div class="flex justify-center flex-wrap gap-10 mt-6">
-          <article class="adobe-product">
+          <article
+            class="adobe-product"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-anchor-placement="center-bottom"
+          >
             <span class="number">01</span>
             <img
               src="./assets/images/illustrator.svg"
@@ -501,7 +533,12 @@
             </p>
             <div class="bar bg-illustrator"></div>
           </article>
-          <article class="adobe-product">
+          <article
+            class="adobe-product"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-anchor-placement="center-bottom"
+          >
             <span class="number">02</span>
             <img
               src="./assets/images/premiere-pro.svg"
@@ -515,7 +552,12 @@
             </p>
             <div class="bar bg-premiere"></div>
           </article>
-          <article class="adobe-product">
+          <article
+            class="adobe-product"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-anchor-placement="center-bottom"
+          >
             <span class="number">03</span>
             <img
               src="./assets/images/photoshop.svg"
@@ -529,7 +571,12 @@
             </p>
             <div class="bar bg-photoshop"></div>
           </article>
-          <article class="adobe-product">
+          <article
+            class="adobe-product"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-anchor-placement="center-bottom"
+          >
             <span class="number">04</span>
             <img src="./assets/images/xd.svg" alt="Adobe Xd" loading="lazy" />
             <h3 class="text-xd">Adobe Xd</h3>
@@ -559,6 +606,7 @@
           alt="Photographer Gallery"
           loading="lazy"
           class="mt-5 lg:-mt-20"
+          data-aos="zoom-out"
         />
         <a href="#apply" class="btn mx-auto">Apply Now</a>
       </div>
@@ -571,7 +619,7 @@
           <h2 class="sec-title">Find a Plan That Fits Your Goals.</h2>
         </div>
         <div class="hidden grid-cols-3 gap-10 mt-20 lg:grid">
-          <article class="plan">
+          <article class="plan" data-aos="zoom-in-right" data-aos-duration="500">
             <div class="plan-heading">
               <h3 class="title">Individuals Plan</h3>
               <div class="price">
@@ -591,7 +639,7 @@
             </ul>
             <a href="#apply" class="btn">Start Now</a>
           </article>
-          <article class="plan scale-110">
+          <article class="plan scale-110" data-aos="zoom-in" data-aos-duration="500">
             <span
               class="bg-accent text-background rounded-full py-1.5 px-2.5 font-semibold absolute top-7 right-7"
               >Best Value!</span
@@ -616,7 +664,7 @@
             </ul>
             <a href="#apply" class="btn">Start Now</a>
           </article>
-          <article class="plan">
+          <article class="plan" data-aos="zoom-in-left" data-aos-duration="500">
             <div class="plan-heading">
               <h3 class="title">Business Plan</h3>
               <div class="price">
@@ -639,83 +687,90 @@
           </article>
         </div>
       </div>
-      <div class="swiper pricingSwiper lg:hidden" style="padding-bottom: 40px;">
-        <div class="swiper-wrapper">
-          <article class="plan swiper-slide">
-            <div class="plan-heading">
-              <h3 class="title">Individuals Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="price-left">19</span>
-                <span class="right-sec">
-                  <span class="price-right">.99</span>
-                  <span class="period">/mo</span>
-                </span>
+      <div class="block lg:hidden">
+        <div
+          class="swiper pricingSwiper"
+          style="padding-bottom: 40px"
+        >
+          <div class="swiper-wrapper">
+            <article class="plan swiper-slide">
+              <div class="plan-heading">
+                <h3 class="title">Individuals Plan</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="price-left">19</span>
+                  <span class="right-sec">
+                    <span class="price-right">.99</span>
+                    <span class="period">/mo</span>
+                  </span>
+                </div>
               </div>
-            </div>
-            <ul class="plan-features">
-              <li class="">Access all courses</li>
-              <li class="">Community support</li>
-              <li class="">Monthly Q&A sessions</li>
-              <li class="">Certificates of completion</li>
-            </ul>
-            <a href="#apply" class="btn">Start Now</a>
-          </article>
-          <article class="plan swiper-slide">
-            <span
-              class="bg-accent text-background rounded-full py-1.5 px-2.5 font-semibold absolute top-7 right-7"
-              >Best Value!</span
-            >
-            <div class="plan-heading">
-              <h3 class="title">Students Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="price-left">9</span>
-                <span class="right-sec">
-                  <span class="price-right">.99</span>
-                  <span class="period">/mo</span>
-                </span>
+              <ul class="plan-features">
+                <li class="">Access all courses</li>
+                <li class="">Community support</li>
+                <li class="">Monthly Q&A sessions</li>
+                <li class="">Certificates of completion</li>
+              </ul>
+              <a href="#apply" class="btn">Start Now</a>
+            </article>
+            <article class="plan swiper-slide">
+              <span
+                class="bg-accent text-background rounded-full py-1.5 px-2.5 font-semibold absolute top-7 right-7"
+                >Best Value!</span
+              >
+              <div class="plan-heading">
+                <h3 class="title">Students Plan</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="price-left">9</span>
+                  <span class="right-sec">
+                    <span class="price-right">.99</span>
+                    <span class="period">/mo</span>
+                  </span>
+                </div>
               </div>
-            </div>
-            <ul class="plan-features">
-              <li class="">Everything in <strong>Individuals</strong> plan</li>
-              <li class="">50% student discount</li>
-              <li class="">Verified certificates</li>
-              <li class="">Priority support</li>
-              <li class="">Exclusive workshops</li>
-            </ul>
-            <a href="#apply" class="btn">Start Now</a>
-          </article>
-          <article class="plan swiper-slide">
-            <div class="plan-heading">
-              <h3 class="title">Business Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="price-left">49</span>
-                <span class="right-sec">
-                  <span class="price-right">.99</span>
-                  <span class="period">/mo per user</span>
-                </span>
+              <ul class="plan-features">
+                <li class="">
+                  Everything in <strong>Individuals</strong> plan
+                </li>
+                <li class="">50% student discount</li>
+                <li class="">Verified certificates</li>
+                <li class="">Priority support</li>
+                <li class="">Exclusive workshops</li>
+              </ul>
+              <a href="#apply" class="btn">Start Now</a>
+            </article>
+            <article class="plan swiper-slide">
+              <div class="plan-heading">
+                <h3 class="title">Business Plan</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="price-left">49</span>
+                  <span class="right-sec">
+                    <span class="price-right">.99</span>
+                    <span class="period">/mo per user</span>
+                  </span>
+                </div>
               </div>
-            </div>
-            <ul class="plan-features">
-              <li class="">Everything in <strong>Students</strong> plan</li>
-              <li class="">Multi-user access</li>
-              <li class="">Team progress tracking</li>
-              <li class="">Dedicated account manager</li>
-              <li class="">Private coaching sessions</li>
-            </ul>
-            <a href="#apply" class="btn">Start Now</a>
-          </article>
+              <ul class="plan-features">
+                <li class="">Everything in <strong>Students</strong> plan</li>
+                <li class="">Multi-user access</li>
+                <li class="">Team progress tracking</li>
+                <li class="">Dedicated account manager</li>
+                <li class="">Private coaching sessions</li>
+              </ul>
+              <a href="#apply" class="btn">Start Now</a>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <section class="section apply" id="apply">
       <div class="container">
         <div class="grid grid-cols-1 gap-10 items-center md:grid-cols-2">
-          <form action="" class="max-w-[420px] mx-auto md:max-w-full">
+          <form action="" class="max-w-[420px] mx-auto md:max-w-full" data-aos="fade-right">
             <div class="mb-10">
               <span class="sec-subtitle">artcode</span>
               <h2 class="sec-title">Apply Now!</h2>
@@ -763,14 +818,22 @@
               Submit
             </button>
           </form>
-          <img src="./assets/images/apply.png" alt="Apply Now" loading="lazy" class="hidden md:block" />
+          <img
+            src="./assets/images/apply.png"
+            alt="Apply Now"
+            loading="lazy"
+            class="hidden md:block"
+            data-aos="fade-left"
+          />
         </div>
       </div>
     </section>
 
     <footer class="mt-10 md:mt-0">
       <div class="container">
-        <div class="flex flex-wrap justify-between gap-10 pb-10 border-b border-text">
+        <div
+          class="flex flex-wrap justify-between gap-10 pb-10 border-b border-text"
+        >
           <div class="col w-full md:w-auto">
             <h2 class="mb-6 font-bold text-4xl text-primary">ARTCODE.</h2>
             <ul class="contact-info">
@@ -871,6 +934,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

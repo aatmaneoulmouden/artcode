@@ -60,3 +60,5 @@ var pricingSwiper = new Swiper(".pricingSwiper", {
         clickable: true,
     },
 });
+
+AOS.init();
